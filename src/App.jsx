@@ -10,6 +10,14 @@ function App() {
     function handleMode(){
         setIsDarkMode(!isDarkMode)
     }
+    
+    useEffect( () => {
+      document.body.classList.add(isDarkMode ? 'dark' : 'light')
+
+      return () => {
+        document.body.classList.remove(isDarkMode ? 'dark' : 'light')
+      }
+    }, [isDarkMode])
 
   return(
     <div className='container'>
@@ -19,7 +27,6 @@ function App() {
     mode={isDarkMode ? 'nav-dark' : 'nav-light'} 
     />
       <Main 
-      mode={isDarkMode ? 'dark' : 'light'} 
       />
     </div>
   )

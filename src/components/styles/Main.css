@@ -1,0 +1,17 @@
+.main {
+    padding-top: 50px;
+}
+
+
+.countries,
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.form{
+    margin-bottom: 50px;
+}

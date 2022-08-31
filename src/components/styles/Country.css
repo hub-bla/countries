@@ -1,6 +1,16 @@
 .country{
     width: 300px;
+    cursor: pointer;
 }
 .flag {
     width: 100%;
+}
+
+.single-country{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }

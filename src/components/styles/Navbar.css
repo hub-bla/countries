@@ -3,6 +3,12 @@
     align-items: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 999;
 }
 
 .nav-dark{
@@ -14,15 +20,6 @@
     color: hsl(200, 15%, 8%);
     background-color: hsl(0, 0%, 100%);
 }
-  /* 
-### Neutral
-
-- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
-- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
-- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
-- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
-- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
-- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
 
 .question{
     margin-right: auto;

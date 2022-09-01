@@ -8,7 +8,7 @@
 }
 
 .single-country{
-    height: 80vh;
+    height: clamp(500px, 70%, 80vh);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .flex-container,
 .details{
     display: flex;
@@ -27,13 +28,13 @@
 }
 
 .flex-container{
-    width: clamp(300px, 60%, 900px);
-    margin-right: auto;
-    margin-left: 50px;
+    width: clamp(300px, 70%, 800px);
+    margin-right: 100px;
+    margin-bottom: 100px;
 }
 
 .details{
-    width: clamp(300px, 40%, 700px);
+    width: clamp(300px, 70%, 700px);
 }
 
 .back{
@@ -52,9 +53,10 @@
     box-shadow: none;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
     .flex-container{
-        margin: 0 auto;
+        margin-inline: auto;
+
     }
 }
 .single-country-flag{

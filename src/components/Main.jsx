@@ -83,6 +83,7 @@ function Main(props){
             isPicked={country.isPicked}
             picked={picked}
             unpicked={unpicked}
+            isDarkMode={props.isDarkMode}
         />
       })
 

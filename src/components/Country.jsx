@@ -44,7 +44,7 @@ function Country(props){
             {props.isPicked ? 
             <div className='single-country'>
                 <div className='flex-container'>
-                    <button className='back' onClick={props.unpicked}>
+                    <button className={`back ${props.isDarkMode ? 'dark-form' : ''}`} onClick={props.unpicked}>
                         {/* <FontAwesomeIcon icon={["fa-solid fa-arrow-left"]} /> */}
                         Back
                     </button>
@@ -86,9 +86,6 @@ function Country(props){
                                 <span className='strong'>Languages: </span>
                                 {getLanguages()}
                             </div>
-                            <div className='borders'>
-                                Borders
-                        </div>
                     </div>
 
                 </div>

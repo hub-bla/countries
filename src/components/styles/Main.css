@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -21,15 +21,26 @@
 
 
 .form{
-   display: flex;
-   gap: 100px;
-   margin-bottom: 50px;
-   justify-content: space-between;
+    width: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.search-name{
-    padding: 10px;
-    width: clamp(300px, 30%, 500px);
-    height: clamp(20px, 10%, 75px);
+
+.search-name,
+.region-select{
+    width: 100%;
     outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
 }
+
+
+.dark-form{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+

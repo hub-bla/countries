@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import Country from './Country'
 import {nanoid} from 'nanoid'
 import './styles/Main.css'
-function Main(){
+function Main(props){
     const [countriesData, setCountriesData] = useState([])
     const [formData, setFormData] = useState({
       input: '',
@@ -89,8 +89,15 @@ function Main(){
     return(
         <main className={`main`}>
           <div className='form'>
-            {!currentCountry && <input type="search" placeholder='Search for a country...' onChange={filterCountries} className='search-name'/>}
-            {!currentCountry && <select defaultValue="" onChange={filterCountries}>
+            {!currentCountry && 
+            <input type="search" 
+            placeholder='Search for a country...' 
+            onChange={filterCountries} 
+            className={`search-name ${props.isDarkMode ? 'dark-form' : ''}`} 
+            value={formData.input}/>}
+
+            {!currentCountry && <select defaultValue="" onChange={filterCountries} className={`region-select 
+            ${props.isDarkMode ? 'dark-form' : ''}`}>
               <option value="" disabled hidden>Filter by Region</option>
               <option value="africa">Africa</option>
               <option value="americas">Americas</option>

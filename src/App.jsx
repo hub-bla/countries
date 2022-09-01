@@ -24,9 +24,10 @@ function App() {
 
     <Navbar handleMode={handleMode} 
     isDarkMode={isDarkMode} 
-    mode={isDarkMode ? 'nav-dark' : 'nav-light'} 
+    mode={isDarkMode ? 'nav-dark' : ''} 
     />
       <Main 
+      isDarkMode={isDarkMode}
       />
     </div>
   )

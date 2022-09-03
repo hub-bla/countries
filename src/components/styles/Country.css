@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: inherit;
 }
 
 .flex-container,
@@ -29,12 +30,13 @@
 
 .flex-container{
     width: clamp(300px, 70%, 800px);
-    margin-right: 100px;
+    margin-inline: auto;
     margin-bottom: 100px;
 }
 
 .details{
     width: clamp(300px, 70%, 700px);
+    padding-bottom: 100px;
 }
 
 .back{
@@ -53,12 +55,6 @@
     box-shadow: none;
 }
 
-@media only screen and (max-width: 1300px){
-    .flex-container{
-        margin-inline: auto;
-
-    }
-}
 .single-country-flag{
     width: 100%;
 }

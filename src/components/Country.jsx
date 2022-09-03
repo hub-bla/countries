@@ -40,7 +40,7 @@ function Country(props){
     }
 
     return (
-        <div>
+        <div className='padding-container'>
             {props.isPicked ? 
             <div className='single-country'>
                 <div className='flex-container'>
